@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Helvetica Neue', Arial, -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #f5f5f5;
+    color: #171717;
+  }
+}
+
+.font-serif-title {
+  font-family: 'Georgia', 'Playfair Display', serif;
+}
+
+.font-serif-cormorant {
+  font-family: 'Georgia', 'Cormorant Garamond', serif;
+}
+
+/* Editorial Aesthetic grid paper background (#f5f5f5 with #e2e2e2 32px grid) */
+.bg-grid-paper {
+  background-color: #f5f5f5;
+  background-image: 
+    linear-gradient(#e2e2e2 1px, transparent 1px),
+    linear-gradient(90deg, #e2e2e2 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Editorial Aesthetic rounded-3xl card container */
+.resume-box {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 1.5rem; /* rounded-3xl */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 2px -1px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.resume-box:hover {
+  border-color: #d4d4d4;
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.06);
+}
+
+/* Editorial dark card variant */
+.resume-box-dark {
+  background-color: #171717;
+  color: #ffffff;
+  border-radius: 1.5rem;
+  border: 1px solid #262626;
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.12);
+}
+
+/* Portrait photo frame - clean editorial rounded card */
+.portrait-frame {
+  background-color: #f5f5f5;
+  border: 1px solid #d4d4d4;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+/* Vertical uppercase editorial heading */
+.vertical-text-heading {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #d4d4d4;
+}
+
+/* Editorial right-edge vertical banner text */
+.vertical-editorial-banner {
+  writing-mode: vertical-rl;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #d4d4d4;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a3a3a3;
+}
+
